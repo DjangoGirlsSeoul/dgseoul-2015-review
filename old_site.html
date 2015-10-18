@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Fixed fullscreen backgrounds - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" />
+    <link rel="stylesheet" href="css/twemoji-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Simonetta:400,400italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+
+
+    <style>
+    body { font-size: 62.5%; }
+    div.content {
+        margin-left: 10%;
+        padding-left: 2%;
+        width: 40%;
+        color: white;
+        background: rgba(0,0,0,0.5)
+    }
+    h1 {
+        color: white;
+        font-family: 'Simonetta', cursive;
+        font-size: 3rem;
+    }
+    p {
+        font-family: 'Patua One', cursive;
+        font-size: 2rem;
+    }
+    .center {
+        text-align: center;
+    }
+
+    .section {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #section0 {
+        background: url(images/event.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #section1 {
+        background: url(images/swag.jpg) no-repeat center center; 
+    }
+    #section2 {
+        background: url(images/mix.jpg) no-repeat center center; 
+    }
+    #section3 {
+        background: url(images/pizza.jpg) no-repeat center center; 
+    }
+    #section4 {
+        background: url(images/girls.jpg) no-repeat center center; 
+    }
+    #section5 {
+        background: url(images/funs.jpg) no-repeat center center; 
+    }
+    .full {
+        padding: 0 10% 10% 10%;
+    }
+
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media only screen 
+      and (max-device-width: 736px)  { 
+        div.content {
+            padding: 10%;
+        }
+    }
+
+    </style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/1.3.2/twemoji.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: true
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+        <div class="content">
+            <h1>
+                Django Girls Seoul 2015
+            </h1>
+            <p>An overview</p>
+        </div>
+    </div>
+	<div class="section" id="section1">
+	    <div class="content">
+            <h1>
+                430 Applicants, 70 Participants
+            </h1>
+            <h1>
+                25 Coaches, 5 Organizers
+            </h1>
+        </div>
+	</div>
+	<div class="section" id="section2">
+        <div class="content">
+            <h1>55 Koreans</h1>
+            <h1>15 Foreigners</h1>
+            <h1>100% Fun</h1>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="content">
+            <h1>400 pizzas</h1>
+            <h1><i class="twa twa-heart-eyes"></i><i class="twa twa-heart-eyes"></i><i class="twa twa-heart-eyes"></i></h1>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="content">
+            <h1>97.5% Satisfaction Rate!</h1>
+        </div>
+    </div>
+    <div class="section" id="section5">
+        <div class="full center"> 
+            <h1>Watch Our Teaser Video</h1>
+            <div class="video-wrapper">
+                <iframe src="https://vid.me/e/bs2L" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
